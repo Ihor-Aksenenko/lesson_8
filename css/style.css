@@ -228,10 +228,6 @@ main {
    background-color: rgba(255, 0, 0, 0.171);
 }
 
-.pseudoclasses__first-last-child {
-   margin-bottom: 50px;
-}
-
 .pseudoclasses__first-last-child ul {
    width: 100px;
    margin: 0 auto;
