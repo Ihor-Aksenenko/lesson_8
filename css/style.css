@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+body {
+   font-family: "Lato";
+   color: #424551;
+   font-size: 16px;
+   line-height: 160%;
+}
+
+[class*="__container"] {
+   max-width: 1230px;
+   margin: 0 auto;
+}
+
+main {
+   margin-bottom: 30px;
+}
+
+/* ---------------------- СТАТТЯ ---------------------- */
+
+.about-course {
+   margin-bottom: 40px;
+}
+
+.about-course__title {
+   font-weight: 900;
+   font-size: 46px;
+   line-height: 130%;
+   color: #1E212C;
+   margin-bottom: 40px;
+}
+
+.about-course__text {
+   margin-bottom: 48px;
+}
+
+.about-course__subtitle {
+   font-weight: 700;
+   font-size: 28px;
+   line-height: 150%;
+   color: #1E212C;
+   margin-bottom: 24px;
+}
+
+.about-course ul li {
+   padding-left: 32px;
+   background: url('../img/icons/check.svg') 0 5px no-repeat;
+}
+
+.about-course ul li:not(:last-child) {
+   margin-bottom: 4px;
+}
+
+.cody-fisher {
+   margin-bottom: 80px;
+}
+
+.cody-fisher__curator {
+   font-weight: 700;
+   line-height: 150%;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   color: #1E212C;
+   margin-bottom: 8px;
+}
+
+.cody-fisher__title {
+   font-weight: 900;
+   font-size: 46px;
+   line-height: 130%;
+   color: #1E212C;
+   margin-bottom: 16px;
+}
+
+.cody-fisher__senior {
+   font-size: 20px;
+   line-height: 150%;
+   color: #787A80;
+   margin-bottom: 32px;
+}
+
+.cody-fisher__statistics {
+   margin-bottom: 32px;
+   font-weight: 700;
+   line-height: 160%;
+   color: #424551;
+}
+
+.cody-fisher__statistics div:not(:last-child) {
+   margin-bottom: 4px;
+}
+
+.cody-fisher__rate {
+   padding-left: 24px;
+   background: url('../img/icons/star.svg') 0 5px no-repeat;
+}
+
+.cody-fisher__courses {
+   padding-left: 24px;
+   background: url('../img/icons/play.svg') 0 5px no-repeat;
+}
+
+.cody-fisher__students {
+   padding-left: 24px;
+   background: url('../img/icons/student.svg') 0 5px no-repeat;
+}
+
+/* ---------- ПСЕВДОКЛАСИ ТА ПСЕВДОЕЛЕМЕНТИ ---------- */
+.pseudoclasses {
+   font-family: 'Roboto', sans-serif;
+   color: #1E212C;
+   margin-bottom: 50px;
+}
+
+.pseudoclasses__title {
+   font-weight: 900;
+   font-size: 46px;
+   line-height: 130%;
+   text-align: center;
+   margin-bottom: 50px;
+}
+
+.pseudoclasses__subtitle {
+   font-weight: 700;
+   font-size: 30px;
+   line-height: 130%;
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+.pseudoclasses__hover {
+   width: 300px;
+
+   /* Це для центровки по вертикалі. 
+   Працює лише коли один рядок тексту. */
+   height: 150px;
+
+   line-height: 150px;
+   border: 1px solid #000;
+   margin: 0 auto;
+   text-align: center;
+   background-color: rgba(0, 128, 0, 0.199);
+   margin-bottom: 50px;
+}
+
+.pseudoclasses__hover:hover {
+   background-color: rgba(255, 0, 0, 0.171);
+}
+
+.pseudoclasses__active {
+   width: 300px;
+
+   /* Це для центровки по вертикалі. 
+   Працює лише коли один рядок тексту. */
+   height: 150px;
+   line-height: 150px;
+
+   border: 1px solid #000;
+   margin: 0 auto;
+   text-align: center;
+   background-color: rgba(0, 128, 0, 0.199);
+   margin-bottom: 50px;
+}
+
+.pseudoclasses__active:active {
+   background-color: rgba(255, 0, 0, 0.171);
+}
+
+.pseudoclasses__visited {
+   text-align: center;
+   margin-bottom: 50px;
+}
+
+.pseudoclasses__visited a {
+   color: rgba(0, 0, 255, 0.856);
+   text-decoration: underline;
+}
+
+.pseudoclasses__visited a:visited {
+   color: darkred;
+   text-decoration: underline;
+}
+
+.pseudoclasses__focus {
+   text-align: center;
+   margin-bottom: 50px;
+}
+
+.pseudoclasses__focus a {
+   color: rgba(0, 0, 255, 0.856);
+   text-decoration: underline;
+}
+
+.pseudoclasses__focus a:focus {
+   background-color: rgba(255, 0, 0, 0.171);
+   outline: 2px solid darkred;
+}
+
+.pseudoclasses__target {
+   text-align: center;
+   margin-bottom: 50px;
+}
+
+.pseudoclasses__target-link a {
+   text-decoration: underline;
+}
+
+.pseudoclasses__target-link {
+   margin-bottom: 100px;
+}
+
+.pseudoclasses__target-object {
+   width: 300px;
+
+   /* Це для центровки по вертикалі. 
+      Працює лише коли один рядок тексту. */
+   height: 150px;
+
+   line-height: 150px;
+   border: 1px solid #000;
+   margin: 0 auto;
+   text-align: center;
+   background-color: rgba(0, 128, 0, 0.199);
+}
+
+.pseudoclasses__target-object:target {
+   background-color: rgba(255, 0, 0, 0.171);
+}
+
+.pseudoclasses__first-last-child {
+   margin-bottom: 50px;
+}
+
+.pseudoclasses__first-last-child ul {
+   width: 100px;
+   margin: 0 auto;
+}
+
+.pseudoclasses__first-last-child ul li:first-child {
+   color: blueviolet;
+}
+
+.pseudoclasses__first-last-child ul li:last-child {
+   color: dodgerblue;
+}
+
+.pseudoclasses__first-last-child {
+   width: 100px;
+   margin: 0 auto;
+   margin-bottom: 50px;
+}
+
+.pseudoclasses__first-last-child div:first-of-type {
+   color: blueviolet;
+}
+
+.pseudoclasses__first-last-child p:first-of-type {
+   color: aqua;
+}
+
+.pseudoclasses__first-last-child div:last-of-type {
+   color: brown;
+}
+
+.pseudoclasses__first-last-child p:last-of-type {
+   color: chartreuse
+}
+
+.pseudoclasses__nth-child {
+   width: 100px;
+   margin: 0 auto;
+   margin-bottom: 50px;
+}
+
+.pseudoclasses__nth-child ul li:nth-child(3) {
+   color: blueviolet;
+}
+
+.pseudoclasses__not {
+   width: 100px;
+   margin: 0 auto;
+   margin-bottom: 50px;
+   border: 1px solid #000;
+}
+
+.pseudoclasses__not ul li:not(:last-child) {
+   margin-bottom: 15px;
+}
+
+.pseudoclasses__not ul li {
+   background-color: rgba(220, 20, 60, 0.336);
+}
+
+.pseudoclasses__before-after {
+   font-size: 20px;
+   text-align: center;
+}
+
+.pseudoclasses__before-after span::before {
+   content: '';
+   display: inline-block;
+   width: 24px;
+   height: 24px;
+   background: url('../img/icons/left-quote.png') no-repeat;
+}
+
+.pseudoclasses__before-after span::after {
+   content: '';
+   display: inline-block;
+   width: 24px;
+   height: 24px;
+   background: url('../img/icons/right-quote.png') no-repeat;
+} 
+
+/* ---------------------- ГРА ---------------------- */
+.game {
+   font-family: 'Roboto', sans-serif;
+   color: #1E212C;
+}
+
+.game__title {
+   font-weight: 900;
+   font-size: 46px;
+   line-height: 130%;
+   margin-bottom: 10px;
+   text-align: center;
+}
+
+.game__rules {
+   font-size: 20px;
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+.game__field {
+   /* У цій версії гри мінімальна ширина поля зафіксована, 
+   щоб не поз'їзжали блоки */
+   min-width: 1230px;
+
+   background: rgba(128, 128, 128, 0.075);
+   padding: 10px;
+   outline: 2px dashed rgb(255, 192, 234);
+
+   /* Прибираємо успадковану від body вистоту рядка, щоб
+   inline-block елементи щільно прилягали один до одного */
+   line-height: 1;
+
+   /* Це для пропуску пробілів для inline-block елементів */
+   font-size: 0;
+}
+
+.game__start {
+   width: 100px;
+   height: 28px;
+   padding: 7px;
+   text-align: center;
+   background-color: rgba(0, 128, 0, 0.712);
+   color: white;
+
+   /* перезапис font-size: 0 успадковану від .game__field*/
+   font-size: 16px;
+
+   line-height: 100%;
+   margin-left: 570px;
+}
+
+.game__start:hover~.line-1,
+.game__start:hover~.joint-1,
+.line-1:hover,
+.line-1:hover~.joint-1,
+.joint-1:hover,
+.joint-1:hover~.line-2,
+.joint-1:hover~.joint-2,
+.line-2:hover,
+.line-2:hover~.joint-2,
+.joint-2:hover,
+.joint-2:hover~.line-3,
+.joint-2:hover~.joint-3,
+.line-3:hover,
+.line-3:hover~.joint-3,
+.joint-3:hover,
+.joint-3:hover~.line-4,
+.joint-3:hover~.joint-4,
+.line-4:hover,
+.line-4:hover~.joint-4,
+.joint-4:hover,
+.joint-4:hover~.line-5,
+.joint-4:hover~.joint-5,
+.line-5:hover,
+.line-5:hover~.joint-5,
+.joint-5:hover,
+.joint-5:hover~.line-6,
+.joint-5:hover~.joint-6,
+.line-6:hover,
+.line-6:hover~.joint-6,
+.joint-6:hover,
+.joint-6:hover~.line-7,
+.joint-6:hover~.game__finish-region,
+.line-7:hover,
+.line-7:hover~.game__finish-region,
+.game__finish-region:hover {
+   visibility: visible;
+}
+
+.game__line {
+   background-color: rgba(0, 0, 255, 0.664);
+   visibility: hidden;
+}
+
+.line-1 {
+   width: 35px;
+   height: 190px;
+   margin-left: 605px;
+}
+
+.joint-1 {
+   display: inline-block;
+   width: 35px;
+   height: 30px;
+   margin-left: 605px;
+}
+
+.line-2 {
+   display: inline-block;
+   width: 545px;
+   height: 30px;
+}
+
+.joint-2 {
+   display: inline-block;
+   width: 25px;
+   height: 30px;
+}
+
+.line-3 {
+   width: 25px;
+   height: 190px;
+   margin-left: 1185px;
+}
+
+.joint-3 {
+   width: 25px;
+   height: 20px;
+   margin-left: 1185px;
+}
+
+.joint-4 {
+   width: 15px;
+   height: 20px;
+}
+
+.line-4 {
+   height: 20px;
+}
+
+.line-5 {
+   width: 15px;
+   height: 190px;
+}
+
+.joint-5 {
+   display: inline-block;
+   width: 15px;
+   height: 10px;
+}
+
+.line-6 {
+   display: inline-block;
+   width: 590px;
+   height: 10px;
+}
+
+.joint-6 {
+   display: inline-block;
+   width: 5px;
+   height: 10px;
+}
+
+.line-7 {
+   width: 5px;
+   height: 140px;
+   margin-left: 605px;
+}
+
+.game__finish-region {
+   height: 78px;
+   visibility: hidden;
+}
+
+.game__finish-region:hover {
+   background: url('../img/victory.png');
+}
+
+.game__finish {
+   width: 100px;
+   height: 28px;
+   padding: 7px;
+   text-align: center;
+   background-color: rgba(255, 0, 106);
+   color: white;
+
+   /* перезапис font-size: 0; у .game__field*/
+   font-size: 16px;
+
+   line-height: 100%;
+   margin-left: 560px;
+}
+
+.footer {
+   background-color: #424551;
+}
+
+.footer__container {
+   font-family: 'Roboto', sans-serif;
+   color: white;
+   text-align: center;
+}
